@@ -48,7 +48,7 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Tab = Window:CreateTab("Welcomed💹", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "Note Read this = The Script Made by Faheem On Discord!",
@@ -101,20 +101,11 @@ local function createStyleButton(styleName)
     })
 end
 
-local function createStyleButton(styleName)
-    MainTab:CreateButton({
-        Name = "Get " .. styleName,
-        Callback = function()
-            game.Players.LocalPlayer.PlayerStats.Style.Value = styleName
-        end
-    })
-end
-
 -- Style List
 local styles = {
     "Aiku", "Bachira", "Chigiri", "Don Lorenzo", "Gagamaru", "Hiori", "Isagi",
     "Karasu", "King", "Kunigami", "Nagi", "Otoya", "Rin", "Reo", "Sae",
-    "Shidou", "Yukimiya", "Kurona", "NEL Isagi", "Kaiser"
+    "Shidou", "Yukimiya", "Kurona", "NEL Isagi"
 }
 
 -- Create Style Buttons
@@ -148,7 +139,6 @@ local flows = {
     "Ice",
     "Soul Harvester",
     "Wild Card"
-    "Emperor"
 }
 
 -- Create Flow Buttons
@@ -181,4 +171,3 @@ FlowTab:CreateButton({
         game.Players.LocalPlayer.PlayerStats.inFlow.Value = false
     end
 })
-
