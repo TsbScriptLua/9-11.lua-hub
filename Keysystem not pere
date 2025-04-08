@@ -3,8 +3,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
+    Title = "9/11.lua Hub" .. Fluent.Version,
+    SubTitle = "by Faheem",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -22,27 +22,27 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "Notification",
-        Content = "This is a notification",
+        Title = "Hey! Donw Here.",
+        Content = "The Script Has Been Execute",
         SubContent = "SubContent", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
+        Duration = 3 -- Set to nil to make the notification not disappear
     })
 
 
 
     Tabs.Main:AddParagraph({
-        Title = "Paragraph",
-        Content = "This is a paragraph.\nSecond line!"
+        Title = "Welcome!",
+        Content = "This is a important if you new to this script."
     })
 
 
 
     Tabs.Main:AddButton({
-        Title = "Button",
-        Description = "Very important button",
+        Title = "Hello There! Thank for executing this script.",
+        Description = "The Script its (STILL IN PROGRESS) i dont recommend to tell about the script.",
         Callback = function()
             Window:Dialog({
-                Title = "Title",
+                Title = "",
                 Content = "This is a dialog",
                 Buttons = {
                     {
